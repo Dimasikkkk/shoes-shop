@@ -1,0 +1,193 @@
+.container {
+  width: 1200px;
+  margin: 45px auto;
+  height: 1000px;
+}
+
+.breadcrumbsLink {
+  display: flex;
+}
+
+.breadcrumbsLink li {
+  color: #748595;
+}
+
+.breadcrumbsLink img {
+  margin-right: 8px;
+}
+
+.breadcrumbsItem {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #748595;
+  margin-right: 8px;
+}
+
+.productImage {
+  width: 608px;
+  height: 440px;
+  display: flex;
+}
+
+.imageSelect {
+  width: 60px;
+  height: 440px;
+  display: block;
+  cursor: pointer;
+}
+
+.breadcrumbs {
+  display: block;
+}
+
+.imageMain {
+  width: 500px;
+  height: 390px;
+  margin: 25px 0 25px 48px;
+}
+
+.buttonUp {
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.buttonDown {
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.select {
+  margin-bottom: 15px;
+}
+.imageSelect img:last-child {
+  margin: 0;
+}
+
+.productDetails {
+  width: 472px;
+  height: 462px;
+  margin-left: 120px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.productInfo {
+  width: 1200px;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  margin-top: 80px;
+}
+
+.productDetails span {
+  display: block;
+}
+
+.article {
+  font-size: 14px;
+  margin-top: 56px;
+  color: #748595;
+  font-weight: 400;
+}
+.color {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: black;
+}
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 56px;
+  color: black;
+}
+
+.productSizes {
+  margin-top: 33px;
+  width: 472px;
+  height: 198px;
+}
+
+.productSizes span {
+  display: inline;
+}
+
+.sizeSwitch {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.sizeModal {
+  color: #20bbed;
+  margin-left: 125px;
+  cursor: pointer;
+}
+.sizeModal span {
+  margin-left: 10px;
+}
+
+.switcher {
+  width: 79px;
+  height: 40px;
+  border-radius: 14px;
+  background-color: white;
+  border: 1px solid #dcdcdb;
+  margin: 0 19px 15px 0;
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+  transition: border-color .3s ease;
+}
+.switcher:hover {
+  border: 1px solid black;
+}
+
+.scaleSwitcher {
+  display: flex;
+}
+
+.sizeList {
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 19px;
+}
+
+.switcher:nth-child(5) {
+  margin: 0;
+}
+
+.sendWhatsApp,
+.sendTelegram {
+  cursor: pointer;
+  width: 225px;
+  height: 42px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+button a {
+  color: white;
+  text-decoration: none
+}
+
+.sendWhatsApp {
+  background-color: #128c7e;
+}
+
+.sendTelegram {
+  background-color: #20bbed;
+  float: right;
+}
