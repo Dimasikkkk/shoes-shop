@@ -2,26 +2,24 @@ import React from "react";
 import styles from "./Card.module.css";
 // import search from "./search.svg";
 // import remove from "./btn-remove.svg";
-import shoesImage from "./adidas-ozweego.jpg";
+import shoesImage from "./adidas-ozweego.webp";
 import { Link } from "react-router-dom";
 
-function Card({items}) {
-  console.log(items);
-
+export const Card = ({ name, price, id, imageUrl }) => {
+  // console.log(id);
   return (
-    <div className={styles.cards}>
-      {items.map((item) =>
-        <div className={styles.card} key={item.id}>
-            <Link key={item.id} to={`/shoes/${item.id}`}>
-              <img src={shoesImage} className={styles.shoesImg} alt="" width={260} height={265} />
-              <h5>{item.name}</h5>
-              <span className={styles.price}>{item.price} руб.</span>
+          <div className={styles.card} key={id}>
+            <Link key={id} to={`/shoes/${id}`}>
+              <img
+                src={imageUrl}
+                className={styles.shoesImg}
+                alt=""
+              />
+              <h5>{name}</h5>
+              <span className={styles.price}>{price} руб.</span>
             </Link>
-        </div>
-      )}
-
-    </div>
+          </div>
   );
-}
+};
 
-export default Card
+export default Card;

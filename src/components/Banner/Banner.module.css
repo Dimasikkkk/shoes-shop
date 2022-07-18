@@ -1,5 +1,48 @@
 .banner {
-  margin: 45px auto;
+  margin: 50px auto;
   width: 1200px;
-  height: 186px;
+  height: 100%;
 }
+
+.banner img {
+  width: 1200px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .banner img {
+    width: 100%;
+  }
+
+  .banner {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+  .banner {
+    width: calc(100% - 60px);;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+
+  .banner {
+    width: calc(100% - 42px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .banner {
+    width: calc(100% - 32px);
+  }
+}
+

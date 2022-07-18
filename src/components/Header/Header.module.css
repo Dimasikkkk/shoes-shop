@@ -1,6 +1,7 @@
 header {
-  padding: 50px 0;
+  padding: 40px 0;
   border-bottom: 1px solid #E5E5E5;
+  margin: 0 auto;
 }
 
 a {
@@ -12,7 +13,6 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .headerLogo img {
@@ -20,9 +20,9 @@ a {
   height: 40px;
 }
 
-nav {
-  width: 738px;
-  margin-left: 226px;
+.navLink {
+  width: 603px;
+  margin-left: 276px;
 }
 
 .menu {
@@ -31,12 +31,128 @@ nav {
 
 .navItem {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
-  margin-right: 89px;
+  margin-right: 60px;
   font-weight: 500;
 }
 
 .menu li:last-child {
   margin-right: 0;
+}
+
+.cart {
+  margin-left: 48px;
+}
+
+.mobile {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+
+.mobileMenuActive  {
+  display: block;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    width: 1024px;
+  }
+
+  .navLink {
+    margin-left: 100px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 40px 30px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .navLink {
+    display: none;
+  }
+
+  .headerLogo {
+    margin: 0 auto;
+  }
+
+  .cart {
+    margin: 0;
+  }
+
+
+
+  .navMobile {
+    text-align: center;
+  }
+
+  .navMobile a{
+    padding-top: 20px;
+  }
+
+
+
+  .navItemMobile {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+  display: block;
+    font-weight: 500;
+  }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+  header {
+    padding: 20px 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+  header {
+    padding: 20px 15px;
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+  header {
+    padding: 20px 10px;
+  }
+
+
 }

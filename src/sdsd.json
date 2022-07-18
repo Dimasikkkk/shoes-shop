@@ -1,11 +1,61 @@
 [
   {
-    "imageUrl": [],
-    "name": "Adidas Originals Ozweego",
-    "article": "EE6464",
-    "color": "White/Core black",
-    "price": "13 500",
-    "sizes": [40,41,42,43,44,45],
-    "id": "1"
+   "imageUrl": "https://static.street-beat.ru/upload/iblock/dc3/dc32aba75b21e0cee79453ac7260adb0.jpg",
+   "name": "adidas Originals Ozweego",
+   "article": "EE6464",
+   "color": "White/Core Black",
+   "price": "13 999",
+   "sizes": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "images": [],
+   "id": "1"
+  },
+  {
+    "imageUrl": "https://static.street-beat.ru/upload/iblock/75b/75bdaa1bebf19dcee9d0ed9e050007e3.jpg",
+    "name": "Nike Air Max 270",
+    "article": "AH8050-100",
+    "color": "White/Black-White",
+    "price": "18 999",
+    "sizes": [],
+    "images": [],
+    "id": "2"
+  },
+  {
+   "imageUrl": "https://static.street-beat.ru/upload/iblock/246/24663e3e41befc801a2fc02037a81d60.jpg",
+   "name": "Nike Blazer Low '77 Vintage",
+   "article": "DA6364-101",
+   "color": "White",
+   "price": "11 199",
+   "sizes": [],
+   "images": [],
+   "id": "3"
+  },
+  {
+   "imageUrl": "https://static.street-beat.ru/upload/iblock/132/132d45dd70755d176d5b858d74df7c0b.JPG",
+   "name": "PUMA x Minecraft Suede",
+   "article": "38629001",
+   "color": "Green",
+   "price": "11 499",
+   "sizes": [],
+   "images": [],
+   "id": "4"
+  },
+  {
+   "imageUrl": "imageUrl 5",
+   "name": "name 5",
+   "article": "article 5",
+   "color": "color 5",
+   "price": "price 5",
+   "sizes": [],
+   "images": [],
+   "id": "5"
   }
-]
+ ]
