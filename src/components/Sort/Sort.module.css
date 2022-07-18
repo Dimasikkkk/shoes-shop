@@ -1,0 +1,187 @@
+.contentTop {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sort {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sort span{
+  color: #BC9E82;
+  border-bottom: 1px dashed #BC9E82;
+  cursor: pointer;
+}
+
+.sort b, .sort svg {
+  margin-right: 7px;
+}
+
+.brand {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.brand ul {
+  display: flex;
+}
+.brand ul li{
+    background-color: #ffff;
+    border: 1px solid #DCE0E5;
+    padding: 14px 28px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.brand .active {
+  border: 1px solid #27B3D0;
+}
+.brand ul li:hover{
+  border: 1px solid #27B3D0;
+  transition: 0.2s ease-in-out;
+}
+
+.sortSelectActive {
+  background: rgba(116, 133, 149, 0.32);
+}
+
+
+.sortMobile {
+  display: none;
+}
+
+
+
+.sortDialog, .sortDialogActive {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .contentTop, .brand {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contentTop, .brand {
+    width: calc(100% - 60px);
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+
+  .sort, .brand {
+    display: none;
+  }
+
+  .contentTop {
+    width: calc(100% - 42px);
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-left: 21px;
+  }
+
+  .sortMobile {
+    display: flex;
+    width: 100%;
+    height: 42px;
+    margin-top: 30px;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .sorting, .filter {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .filter {
+    margin: 0 auto;
+  }
+
+  .sorting {
+    margin-left: 50px;
+  }
+
+
+  .sorting::after {
+    content: "";
+    /* position: absolute; */
+    /* top: 50%; */
+    right: 0;
+    margin-left: 50px;
+    width: 2px;
+    height: 32px;
+    background-color: #f2f2f2;
+    /* transform: translateY(-50%); */
+  }
+
+  .sortDialogActive {
+    display: block;
+    width: 290px;
+    height: 224px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px -2px 25px rgb(0 0 0 / 15%);
+    padding: 20px;
+    margin-top: -30px;
+    z-index: 1;
+  }
+
+  .sorts a {
+    display: block;
+    margin-bottom: 8px;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #DCE0E5;
+    border-radius: 5px;
+    padding: 11px 0 11px 10px;
+    font-size: 14px;
+  }
+
+  .sorting span, .filter span {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+  .contentTop {
+    width: calc(100% - 30px);
+  }
+
+
+}
+
+
