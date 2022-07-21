@@ -118,6 +118,7 @@ h5 {
     width: 165px;
     height: 214px;
     margin: 0 !important;
+    outline: none;
   }
 
   .card img {
