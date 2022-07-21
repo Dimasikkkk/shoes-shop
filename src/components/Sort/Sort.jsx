@@ -34,7 +34,7 @@ function Sort() {
             </svg>
 
           </div>
-          <div className={styles.filter}>
+          <div className={styles.filter} onClick={() => setIsMobile(!isMobile)}>
               <span>Фильтр</span>
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.4669 8.06676H2.93353C2.73904 8.06676 2.55251 7.9895 2.41498 7.85198C2.27746 7.71445 2.2002 7.52792 2.2002 7.33343C2.2002 7.13894 2.27746 6.95241 2.41498 6.81489C2.55251 6.67736 2.73904 6.6001 2.93353 6.6001H12.4669C12.6614 6.6001 12.8479 6.67736 12.9854 6.81489C13.1229 6.95241 13.2002 7.13894 13.2002 7.33343C13.2002 7.52792 13.1229 7.71445 12.9854 7.85198C12.8479 7.9895 12.6614 8.06676 12.4669 8.06676ZM19.0669 8.06676H16.1335C15.939 8.06676 15.7525 7.9895 15.615 7.85198C15.4775 7.71445 15.4002 7.52792 15.4002 7.33343C15.4002 7.13894 15.4775 6.95241 15.615 6.81489C15.7525 6.67736 15.939 6.6001 16.1335 6.6001H19.0669C19.2614 6.6001 19.4479 6.67736 19.5854 6.81489C19.7229 6.95241 19.8002 7.13894 19.8002 7.33343C19.8002 7.52792 19.7229 7.71445 19.5854 7.85198C19.4479 7.9895 19.2614 8.06676 19.0669 8.06676Z" fill="#111224"/>
@@ -53,6 +53,41 @@ function Sort() {
           <a className={styles.sortSelect} href="/">Сначала популярные</a>
         </div>
 
+      </div>
+      <div className={isMobile ? styles.filterModalActive : styles.filterModal }>
+        <div className={styles.headerModal}>
+            <span>Фильтр</span>
+            <svg onClick={() => setIsMobile(false)} width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.695202 0.257223C0.474702 0.356403 0.254202 0.648544 0.204702 0.907564C0.122082 1.35954 0.0504422 1.27674 4.0297 5.26716L7.75552 8.99856L4.02412 12.7354C1.97392 14.7857 0.270762 16.5218 0.237642 16.5881C0.149442 16.7645 0.166002 17.1392 0.265182 17.3542C0.436002 17.7124 0.970602 17.9109 1.3675 17.762C1.45012 17.7289 3.20836 16.0313 5.27512 13.9865L9.02848 10.2717L12.7215 13.97C14.8436 16.092 16.4859 17.6958 16.5851 17.7399C17.3346 18.0652 18.0897 17.2604 17.7259 16.5328C17.6762 16.4336 15.9842 14.6974 13.9616 12.6747L10.2908 8.98758L13.9947 5.31684C17.9849 1.34856 17.8803 1.4697 17.7921 0.984783C17.693 0.450182 17.0261 0.130503 16.53 0.378542C16.4308 0.428043 14.7111 2.10924 12.705 4.10994L9.0508 7.75854L5.34694 4.05468C3.30754 2.02086 1.56046 0.317883 1.46128 0.268204C1.24636 0.163443 0.926682 0.158043 0.695202 0.257223Z" fill="black"/>
+            </svg>
+
+        </div>
+        <div className={styles.brandsModal}>
+          <span>Бренд</span>
+            <ul>
+              <li className={styles.brandSelect}>Puma</li>
+              <li className={styles.brandSelect}>Jordan</li>
+              <li className={styles.brandSelect}>adidas Originals</li>
+              <li className={styles.brandSelect}>Reebok</li>
+              <li className={styles.brandSelect}>New Balance</li>
+            </ul>
+        </div>
+        <div className={styles.sizesModal}>
+          <span>Размер</span>
+            <div className={styles.sizesSelects}>
+              <ul>
+                <li className={styles.sizeSelect}>40</li>
+                <li className={styles.sizeSelect}>41</li>
+                <li className={styles.sizeSelect}>42</li>
+                <li className={styles.sizeSelect}>43</li>
+                <li className={styles.sizeSelect}>44</li>
+                <li className={styles.sizeSelect}>45</li>
+                <li className={styles.sizeSelect}>46</li>
+                <li className={styles.sizeSelect}>47</li>
+              </ul>
+            </div>
+        </div>
+        <button className={styles.apply}>Применить</button>
       </div>
       <div className={styles.brand}>
         <ul>
