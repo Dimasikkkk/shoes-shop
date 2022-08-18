@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Card.module.css";
 // import search from "./search.svg";
 // import remove from "./btn-remove.svg";
-import shoesImage from "./adidas-ozweego.webp";
+// import shoesImage from "./adidas-ozweego.webp";
 import { Link } from "react-router-dom";
 
 export const Card = ({ name, price, id, imageUrl }) => {

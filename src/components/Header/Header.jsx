@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import logo from "./logo.svg";
 import { Link } from "react-router-dom";
-import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);

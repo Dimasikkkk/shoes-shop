@@ -2,14 +2,15 @@ import React from "react";
 import styles from "./Sort.module.css";
 
 
-function Sort() {
-
+function Sort({value, onChangeCategory}) {
+  const brands = ['Все','adidas Originals', 'Nike', 'Puma', 'Converse', 'Reebok']
   const [isMobile, setIsMobile] = React.useState(false);
+  const [isSort, setIsSort] = React.useState(false);
 
   return (
     <>
       <div className={styles.contentTop}>
-        <h1>Все кроссовки</h1>
+        <h1>Кроссовки</h1>
         <div className={styles.sort}>
           <svg
             width="10"
@@ -27,7 +28,7 @@ function Sort() {
           <span>популярности</span>
         </div>
         <div className={styles.sortMobile}>
-          <div className={styles.sorting} onClick={() => setIsMobile(!isMobile)}>
+          <div className={styles.sorting} onClick={() => setIsSort(!isSort)}>
             <span>Сортировка</span>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.5517 8.72412L11 13.2758L6.44824 8.72412" stroke="black" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -45,7 +46,7 @@ function Sort() {
           </div>
         </div>
       </div>
-      <div className={isMobile ? styles.sortDialogActive : styles.sortDialog}>
+      <div className={isSort ? styles.sortDialogActive : styles.sortDialog}>
         <div className={styles.sorts}>
           <a className={styles.sortSelectActive} href="/">Сначала дороже</a>
           <a className={styles.sortSelect} href="/">Сначала дешевле</a>
@@ -65,11 +66,9 @@ function Sort() {
         <div className={styles.brandsModal}>
           <span>Бренд</span>
             <ul>
-              <li className={styles.brandSelect}>Puma</li>
-              <li className={styles.brandSelect}>Jordan</li>
-              <li className={styles.brandSelect}>adidas Originals</li>
-              <li className={styles.brandSelect}>Reebok</li>
-              <li className={styles.brandSelect}>New Balance</li>
+              {brands.map((brand, i) => (
+                <li key={i} onClick={() => onChangeCategory(i)} className={value === i ? styles.active : styles.brandSelect}>{brand}</li>
+              ))}
             </ul>
         </div>
         <div className={styles.sizesModal}>
@@ -91,12 +90,11 @@ function Sort() {
       </div>
       <div className={styles.brand}>
         <ul>
-          <li>Nike</li>
-          <li>Puma</li>
-          {/* <li className={styles.active}>Puma</li> */}
-          <li>Reebok</li>
-          <li>New Balance</li>
-          <li>adidas Originals</li>
+        {brands.map((brand, i) => (
+                <li key={i} onClick={() => onChangeCategory(i)} className={value === i ? styles.active : ''}>
+                  {brand}
+                </li>
+        ))}
         </ul>
       </div>
     </>
