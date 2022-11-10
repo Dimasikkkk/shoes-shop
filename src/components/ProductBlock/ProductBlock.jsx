@@ -54,7 +54,7 @@ export function ProductBlock({ id, color, name, article, price, sizes, images })
         </ul>
       </div>
       <div className={styles.productInfo}>
-         {/* <div className={styles.productImage}>
+          <div className={styles.productImage}>
 
 
           <Swiper
@@ -95,7 +95,7 @@ export function ProductBlock({ id, color, name, article, price, sizes, images })
               </SwiperSlide>
             ))}
           </Swiper>
-        </div> */}
+        </div>
 
         <div className={styles.productDetails}>
           <h1>{name}</h1>
