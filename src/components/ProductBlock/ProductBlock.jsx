@@ -18,7 +18,7 @@ import help from "./help.jpg";
 // import img4 from "./4.jpg";
 // import img5 from "./5.jpg";
 import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react" Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./styles.css";
 import "swiper/css/free-mode";
