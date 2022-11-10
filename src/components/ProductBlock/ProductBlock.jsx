@@ -17,16 +17,15 @@ import help from "./help.jpg";
 // import img3 from "./3.jpg";
 // import img4 from "./4.jpg";
 // import img5 from "./5.jpg";
-// import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
+import { Navigation, Pagination, Scrollbar, A11y, Controller } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react" Import Swiper styles
 import "swiper/css";
 import "./styles.css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 // import required modules
-// import { FreeMode, Thumbs } from "swiper";
+import { FreeMode, Thumbs } from "swiper";
 
 
 export function ProductBlock({ id, color, name, article, price, sizes, images }) {
